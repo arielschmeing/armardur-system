@@ -1,0 +1,21 @@
+.container {
+    & > section {
+        width: 100%;
+    }
+
+    & > h1 {
+        font-size: 2em;
+        color: var(--dark);
+    }
+}
+
+.container__attributes {
+    margin-top: calc(4 * var(--scale));
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--light-medium);
+    margin: calc(4 * var(--scale)) 0;
+}

@@ -1,0 +1,51 @@
+.container {
+    margin-top: calc(6 * var(--scale));
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1080px;
+    justify-content: space-between;
+
+    & > div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.content {
+    color: var(--light-medium);
+    margin-left: calc(2 * var(--scale));
+}
+
+.user__icon {
+    position: relative;
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 5px solid var(--primary);
+    
+    & > p {
+        font-size: 2.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        text-shadow: 0 3px 10px rgba(0, 0, 0, 0.301);
+        color: var(--primary);
+    }
+}
+
+.active__icon {
+    background-color: var(--confirmed);
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border: 5px solid var(--primary);
+    border-radius: 50%;
+}

@@ -1,0 +1,41 @@
+.container {
+    width: 1080px;
+    border-radius: calc(2 * var(--scale));
+    border: 2px solid var(--primary);
+    padding: calc(3 * var(--scale));
+    background-color: var(--light);
+    margin: calc(8 * var(--scale)) 0;
+}
+
+.header {
+    display: flex;
+
+    & > div > h1 {
+        font-size: 2em;
+        color: var(--dark);
+    }
+}
+
+.container__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: calc(3 * var(--scale));
+
+    & > svg {
+        padding: var(--scale);
+        width: 64px;
+        height: auto;
+        fill: var(--primary);
+        border: 2px solid var(--primary);
+        border-radius: calc(2 * var(--scale));
+    }
+}
+
+.container__badges {
+    display: flex;
+    
+    & > p {
+        margin-right: var(--scale);
+    }
+}

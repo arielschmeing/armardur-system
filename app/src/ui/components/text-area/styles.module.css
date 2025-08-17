@@ -1,0 +1,24 @@
+.light__bg__textarea {
+    width: 100%;
+
+    & textarea {
+        transition: .3;
+        border: 1px solid var(--primary);
+        min-width: 100%;
+        background-color: var(--light);
+        padding: calc(2 * var(--scale)); 
+        border-radius: var(--scale);
+        outline: none;
+        resize: none;
+        font-size: var(--font-size-min);
+    
+        &:focus {
+            border-color: var(--secondary);
+        }
+    }
+
+    &::placeholder {
+        color: var(--light-medium);
+        font-style: italic;
+    }
+}

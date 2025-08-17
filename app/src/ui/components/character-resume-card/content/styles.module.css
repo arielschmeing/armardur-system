@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    & > button {
+        margin: calc(2 * var(--scale));
+        margin-top: 0;
+    }
+    
+    & > div {
+        width: 100%;   
+        display: flex;
+        justify-content: space-between;
+    }
+}

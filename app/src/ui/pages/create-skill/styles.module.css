@@ -1,0 +1,30 @@
+.title {
+    font-weight: 600;
+    color: var(--light);
+    font-size: 3em;
+}
+
+.container__progress {
+    display: flex;
+    margin: calc(4 * var(--scale)) 0;
+
+    & > p {
+        transition: .5s;
+        color: var(--dark);
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9em;
+        background-color: var(--light);
+        margin: 0 var(--scale);
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+#check {
+    background-color: var(--primary);
+    color: var(--light);
+}

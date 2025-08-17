@@ -1,0 +1,1 @@
+export type BadgeBlockClass = "main__variant"

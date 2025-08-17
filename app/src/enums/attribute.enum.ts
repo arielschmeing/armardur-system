@@ -1,0 +1,9 @@
+export enum Attribute {
+    STRENGTH = "STRENGTH",
+    DEXTERITY = "DEXTERITY",
+    CONSTITUTION = "CONSTITUTION",
+    MENTAL = "MENTAL",
+    WISDOM = "WISDOM",
+    CHARISMA = "CHARISMA",
+    ELEMENTAL = "ELEMENTAL"
+}

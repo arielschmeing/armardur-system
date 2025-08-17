@@ -1,0 +1,131 @@
+.login__button {
+    transition: .2s;
+    cursor: pointer;
+    border: none;
+    border-radius: var(--scale);
+    padding: var(--scale);
+    background-color: var(--primary);
+
+    &:hover {
+        background-color: var(--primary-light);
+    }
+
+    & p {
+        font-weight: 600;
+        font-size: var(--font-size);
+        color: var(--light);
+    }
+}
+
+.register__button {
+    transition: .2s;
+    cursor: pointer;
+    border: 1px solid var(--primary);
+    border-radius: var(--scale);
+    padding: var(--scale);
+    background-color: transparent;
+
+    &:hover {
+        border: 1px solid var(--primary-light);
+
+        & p {
+            color: var(--primary-light);
+        }
+    }
+
+    & p {
+        transition: .2s;
+        font-weight: 600;
+        font-size: var(--font-size);
+        color: var(--primary);
+    }
+}
+
+.form__button {
+    position: relative;
+    transition: .2s;
+    cursor: pointer;
+    border: none;
+    border-radius: var(--scale);
+    padding: var(--scale) calc(3 * var(--scale)) var(--scale) calc(5 * var(--scale));
+
+    & p {
+        font-weight: 600;
+        font-size: var(--font-size);
+        color: var(--light);
+    }
+
+    & svg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+    }
+}
+
+.action_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: var(--scale);
+    padding: var(--scale);
+    background-color: var(--confirmed);
+
+    &:hover {
+        background-color: var(--confirmed-light);
+    }
+
+    & p {
+        font-weight: 600;
+        font-size: var(--font-size);
+        color: var(--light);
+    }
+}
+
+#cancel__button {
+    background-color: var(--error);
+
+    &:hover {
+        background-color: var(--error-dark);
+    }
+}
+
+#add__button {
+    background-color: var(--primary);
+
+    &:hover {
+        background-color: var(--primary-dark);
+    }
+}
+
+#confirmed__button {
+    background-color: var(--confirmed);
+
+    &:hover {
+        background-color: var(--confirmed-dark);
+    }
+}
+
+#bind__skill__button {
+    right: calc(3 * var(--scale));
+    width: 200px;
+    position: absolute;
+}
+
+#delete__action {
+    background-color: var(--error);
+    color: var(--light);
+
+    &:hover {
+        background-color: var(--error-dark);
+    }
+}
+
+#view__action {
+    margin: calc(4 * var(--scale));
+}

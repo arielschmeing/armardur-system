@@ -1,0 +1,43 @@
+.container__login {
+    box-shadow: 0 0 15px var(--primary);
+    text-align: center;
+    background-color: var(--dark-light);
+    padding: calc(2 * var(--scale)) calc(3 * var(--scale));
+    border-radius: calc(2 * var(--scale));
+
+    & h1 {
+        font-size: 2em;
+        margin: calc(2 * var(--scale));
+        color: var(--light);
+    }
+
+    & article {
+        display: flex;
+        flex-direction: column;
+        
+        & .container__inputs {
+            height: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: calc(5 * var(--scale)) 0;
+        }
+
+        & .container__buttons {
+            height: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            & button {
+                width: 100%;
+            };
+        }
+
+    }
+}
+
+.text__error {
+    font-size: var(--font-size-min);
+    margin: var(--scale) 0;
+    color: var(--error);
+}

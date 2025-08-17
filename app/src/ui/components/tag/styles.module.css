@@ -1,0 +1,16 @@
+.container {
+    display: flex; 
+    margin: calc(3 * var(--scale)) 0;
+
+    & > p {
+        font-style: italic;
+        color: var(--dark-light);
+    }
+}
+
+.line {
+    background-color: var(--secondary);
+    min-width: 5px;
+    min-height: 100%;
+    margin-right: calc(2 * var(--scale));
+}

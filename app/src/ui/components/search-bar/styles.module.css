@@ -1,0 +1,12 @@
+.container {
+    width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: calc(8 * var(--scale)) 0;
+
+    & h1 {
+        font-size: 2.5em;
+        color: var(--light);
+    }
+}

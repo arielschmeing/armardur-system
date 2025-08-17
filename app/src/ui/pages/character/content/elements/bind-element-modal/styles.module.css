@@ -1,0 +1,19 @@
+.content {
+    padding: var(--scale);
+    max-height: 400px;
+    overflow: scroll;
+}
+
+.footer {
+    & > button {
+        width: 100%;
+    }
+}
+
+.header {
+    border-bottom: 1px solid var(--light-medium);
+    
+    & > p {
+        margin-bottom: var(--scale);
+    }
+}

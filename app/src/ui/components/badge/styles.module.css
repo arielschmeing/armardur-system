@@ -1,0 +1,52 @@
+.generic {
+    padding: calc(0.5 * var(--scale)) calc(1.5 * var(--scale));
+    border-radius: calc(3 * var(--scale));
+    border: 1px solid transparent;
+
+    background-color: #d2ddff;
+    color: #4463BF;
+    border-color: #4463BF;
+}
+
+.level {
+    background-color: var(--secondary-light);
+    color: var(--light);
+    border: none;
+    font-weight: 500;
+}
+
+.umbra {
+    background-color: rgb(230, 214, 255);
+    color: var(--secondary);
+    border-color: var(--secondary-light);
+}
+
+.luminos {
+    background-color: rgb(253, 255, 219);
+    color: #BB995E;
+    border-color: #BB995E;
+}
+
+.ignis {
+    background-color: #ffd7d7;
+    color: #AF4646;
+    border-color: #AF4646;
+}
+
+.aura {
+    background-color: #d2ddff;
+    color: #4463BF;
+    border-color: #4463BF;
+}
+
+.defesa {
+    background-color: #c9ffde;
+    color: #166534;
+    border-color: #166534;
+}
+
+.class__attribute {
+    background-color: var(--light);
+    color: var(--primary-dark);
+    border-color: var(--primary);
+}

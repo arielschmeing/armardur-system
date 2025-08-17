@@ -1,0 +1,17 @@
+.input__container {
+    display: flex;
+    color: var(--dark-light);
+    align-items: start;
+    margin: var(--scale) 0;
+
+    & > label {
+        margin-left: var(--scale);
+        width: 100%;
+
+        & > input {
+            padding: 0;
+            padding-left: calc(2 * var(--scale));
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,1 @@
+export type TextAreaClass = "light__bg__textarea"

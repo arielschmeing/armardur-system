@@ -1,0 +1,31 @@
+.container__void {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: calc(4 * var(--scale)) 0;
+    margin-bottom: 0;
+    color: var(--dark);
+
+    & > h1 {
+        font-size: 2em;
+    }
+
+    & > p {
+        font-size: var(--font-size);
+        color: var(--dark-light);
+        margin: calc(2 * var(--scale)) 0;
+    }
+
+}
+
+.container {
+    & > h1 {
+        margin-bottom: calc(4 * var(--scale));
+    }
+    
+    & > button {
+        margin-top: calc(4 * var(--scale));
+        width: 100%;
+    }
+}

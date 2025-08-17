@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    overflow-x: auto;
+    height: 100px;
+    scroll-behavior: smooth;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+
+    & > button {
+        width: 41px;
+        margin: 0 var(--scale);
+    }
+}

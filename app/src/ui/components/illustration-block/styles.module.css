@@ -1,0 +1,21 @@
+.container {
+    transition: .2s;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: var(--primary);
+
+    & > h1 {
+        font-weight: 300;
+        position: absolute;
+        bottom: var(--scale);
+        left: calc(2 * var(--scale));
+        text-decoration: none;
+        color: var(--light);
+    }
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--shadow-light);
+    }
+}

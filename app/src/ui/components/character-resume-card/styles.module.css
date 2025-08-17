@@ -1,0 +1,17 @@
+.container {
+    transition: .2s;
+    width: 500px;
+    background-color: var(--light);
+    border-radius: var(--scale);
+
+    &:hover {
+        scale: 1.05;
+        box-shadow: var(--shadow-light);
+    }
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--light-medium);
+}

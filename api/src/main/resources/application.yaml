@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/armardur
+    username: postgres
+    password: password
+
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show_sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  error:
+    include-message: always
+
+logging:
+  level:
+    org.hibernate.orm.jdbc.bind: trace
+
+jwt:
+  public:
+    key: classpath:authz.pub
+  private:
+    key: classpath:authz.pem

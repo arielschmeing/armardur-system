@@ -1,0 +1,26 @@
+.container {
+    background-color: var(--dark-light);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > nav {
+        max-width: 1080px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & > div > a {
+            text-decoration: none;
+            color: inherit;
+            
+            & label {
+                margin-left: calc(3 * var(--scale));
+            }
+        }
+    }
+}

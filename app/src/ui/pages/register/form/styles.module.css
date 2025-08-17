@@ -1,0 +1,10 @@
+.container__inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: calc(5 * var(--scale)) 0;
+
+    & > label {
+        margin: var(--scale) 0;
+    }
+}

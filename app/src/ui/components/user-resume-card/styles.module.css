@@ -1,0 +1,61 @@
+.container {
+    margin-bottom: calc(4 * var(--scale));
+    width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--light-medium);
+    padding: calc(2 * var(--scale));
+    padding-bottom: calc(4 * var(--scale));
+
+    & > button {
+        display: flex;
+
+        & > svg {
+            margin-left: var(--scale);
+            height: 18px;
+            align-self: center;
+        }
+    }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil {
+    background-image: linear-gradient(45deg, var(--primary), var(--secondary));
+    color: var(--light);
+    font-weight: 600;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+    margin-right: calc(2 * var(--scale));
+}
+
+.information {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+
+    & > div {
+        display: flex;
+        color: var(--light-dark);
+
+        & > svg {
+            fill: var(--light-dark);
+            margin-right: var(--scale);
+        }
+    }
+
+    & > p {
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+}

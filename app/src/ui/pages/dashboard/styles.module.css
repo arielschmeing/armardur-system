@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1080px;
+    text-align: center;
+    color: var(--light);
+    margin: calc(12 * var(--scale)) 0;
+
+    & > div {
+        & > h1 {
+            font-size: 3em;
+        }
+
+        & > p {
+            font-size: 1em;
+        }
+    }
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1080px;
+    min-height: calc(100vh - 400px);
+    align-items: start;
+    justify-content: start;
+    gap: calc(3.3 * var(--scale));
+    margin-bottom: calc(8 * var(--scale));
+}

@@ -1,0 +1,15 @@
+.content {
+    min-height: 632px;
+    background-color: var(--light);
+    border-radius: calc(2 * var(--scale));
+    padding: calc(2 * var(--scale));
+}
+
+.void__content {
+    min-height: 632px;
+    font-weight: 600;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    color: var(--light);
+}

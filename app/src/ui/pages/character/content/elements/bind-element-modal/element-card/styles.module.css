@@ -1,0 +1,33 @@
+.content {
+    border: 1px solid var(--light-medium);
+    outline: 2px solid var(--light);
+    border-radius: var(--scale);
+    padding: var(--scale) calc(2 * var(--scale));
+    margin: var(--scale) 0;
+
+    & > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    & svg {
+        transition: .5s;
+        width: 16px;
+        height: 16px;
+        fill: var(--light-dark);
+    }
+}
+
+.icon__close {
+    transform: rotate(90deg);
+}
+
+.icon__open {
+    transform: rotate(-90deg);
+}
+
+.selected {
+    transition: .4s;
+    outline: 2px solid var(--primary);
+}

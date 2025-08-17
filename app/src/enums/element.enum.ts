@@ -1,0 +1,9 @@
+export enum Element {
+    LUMINOS = "LUMINOS",
+    UMBRA = "UMBRA",
+    VORTEXIS = "VORTEXIS",
+    ASTRALITH = "ASTRALITH",
+    AQUIS = "AQUIS",
+    IGNIS = "IGNIS",
+    UNRESTRICTED = "UNRESTRICTED"
+}
