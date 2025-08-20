@@ -37,6 +37,14 @@ export const getClass = async ({ token, id }: IdRequest) => {
     return data
 }
 
+export const postClass = async ({ token, request }: {token: string, request: CharacterClass | null}) => {
+    const { status } = await axios.post(`${API_URL}/${CONTROLLER}`, 
+        request, 
+        { headers: { "Authorization": `Bearer ${token}` } })
+
+    return status === 201
+}
+
 export const putSkillInClassLevel = async ({ token, classId, skillId, level }: SkillInClassLevelRequest) => {
     await axios.put(`${API_URL}/${CONTROLLER}/${classId}/level/${level}/skill/${skillId}`,
         null,

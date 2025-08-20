@@ -1,0 +1,35 @@
+.container {
+    position: relative;
+    width: 100%;
+    
+    &:hover {
+        & > .select, .icon {
+            cursor: pointer;
+            border-color: var(--secondary);
+            fill: var(--secondary);
+        }
+    }
+}
+
+.select {
+    width: 100%;
+    transition: .3s;
+    margin-left: var(--scale);
+    background-color: var(--light);
+    border: none;
+    border-bottom: 1px solid var(--primary);
+    padding: 0 var(--scale);
+    appearance: none;
+    padding-right: calc(4 * var(--scale));
+    color: var(--dark);
+}
+
+.icon {
+    transition: .3s;
+    fill: var(--primary);
+    position: absolute;
+    right: var(--scale);
+    top: 40%;
+    width: 14px;
+    transform: rotate(90deg) translateX(-50%);
+}

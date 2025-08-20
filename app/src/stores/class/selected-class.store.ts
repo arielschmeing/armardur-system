@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { CharacterClass } from "../interfaces/domains/character-class.interface";
+import { CharacterClass } from "../../interfaces/domains/character-class.interface";
 
 interface SelectedClass {
     selectedClass: CharacterClass | null

@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
-import { useUserAuth } from "../../../../../stores/user-auth.store"
-import { useCharacterNavigate } from "../../../../../stores/character-navigate.store"
+import { useUserAuth } from "../../../../../stores/user/user-auth.store"
 import { Skill } from "../../../../../interfaces/domains/skill.interface"
 import { useSearch } from "../../../../../hooks/use-search.hook"
 import { useSuspenseQuery } from "@tanstack/react-query"
 import { getSkills } from "../../../../../services/skill.service"
-import { useSelectedCharacter } from "../../../../../stores/selected-character.store"
+import { useSelectedCharacter } from "../../../../../stores/character/selected-character.store"
+import { useCharacterNavigate } from "../../../../../stores/character/character-navigate.store"
 
 export const useCharacterSkills = () => {
     const [isActive, setIsActive] = useState<boolean>(false)
@@ -31,7 +31,7 @@ export const useCharacterSkills = () => {
     const skillsInClass = () => {
         if(!character) return []
 
-        return character.characterClass.levels.reduce<Skill[]>((acc, level) => {
+        return character.characterClass!.levels!.reduce<Skill[]>((acc, level) => {
             if(level.skills) {
                 acc.push(...level.skills.filter(s => 
                     !acc.find(sc => sc.id === s.id)))

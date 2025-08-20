@@ -1,26 +1,27 @@
-import Styles from "./styles.module.css"
-
-import { Input } from "../../../../components/input"
 import { TextArea } from "../../../../components/text-area"
 import { CreateSkillContentCard } from "../card"
-import { CreateSkillChildrenProps } from "../../../../../interfaces/create-skill-children-props.interface"
+import { AttributeInput } from "../../../../components/attribute-input"
+import { Input } from "../../../../components/input"
+import { useCreateSkillData } from "../../../../../stores/skill/create-skill-data.store"
 
-export const CreateSkillContentResume = ({ skill, setValue }: CreateSkillChildrenProps) => {
+export const CreateSkillContentResume = () => {
+    const { skill, setValue } = useCreateSkillData()
+
+    if(!setValue) return null
+
     return (
         <CreateSkillContentCard part="resume">
-            <div className={Styles.input__container}>
-                <p>Nome:</p>
+            <AttributeInput title="Nome:">
                 <Input 
-                    name="name"
                     className="light__bg__input"
+                    name="name"
                     placeholder="Ex.: Bola de Fogo"
                     onChange={(e) => setValue("name", e.target.value)}
                     defaultValue={skill?.name}
                 />
-            </div>
+            </AttributeInput>
 
-            <div className={Styles.input__container}>
-                <p>Sobre:</p>
+            <AttributeInput title="Sobre:">
                 <TextArea 
                     className="light__bg__textarea"
                     name="description"
@@ -28,7 +29,7 @@ export const CreateSkillContentResume = ({ skill, setValue }: CreateSkillChildre
                     onChange={(e) => setValue("description", e.target.value)}
                     defaultValue={skill?.description}
                 />
-            </div>
+            </AttributeInput>
         </CreateSkillContentCard>
     )
 }

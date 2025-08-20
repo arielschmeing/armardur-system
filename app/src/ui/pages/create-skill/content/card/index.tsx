@@ -3,11 +3,11 @@ import Styles from "./styles.module.css"
 import { CardWrapper } from "../../../../components/card-wrapper"
 import { PropsWithChildren } from "react"
 import { Button } from "../../../../components/button"
-import { StepType } from "../../../../../stores/create-skill-step.store"
+import { SkillStepType } from "../../../../../stores/skill/create-skill-step.store"
 import { useCreateSkillContentCard } from "./use-create-skill-content-card.hook"
 
 interface CreateSkillContentCardProps extends PropsWithChildren {
-    part: StepType
+    part: SkillStepType
 }
 
 export const CreateSkillContentCard = ({ part, children }: CreateSkillContentCardProps) => {

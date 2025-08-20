@@ -5,8 +5,8 @@ import { CharacterClassCard } from "../../../../components/character-class-card"
 import { AddIcon } from "../../../../components/icons/add"
 import { ShieldIcon } from "../../../../components/icons/shield"
 import { StarIcon } from "../../../../components/icons/star"
-import { useCharacterNavigate } from "../../../../../stores/character-navigate.store"
-import { useSelectedCharacter } from "../../../../../stores/selected-character.store"
+import { useCharacterNavigate } from "../../../../../stores/character/character-navigate.store"
+import { useSelectedCharacter } from "../../../../../stores/character/selected-character.store"
 
 export const CharacterContentGeneral = () => {
     const { selectedCharacter: character } = useSelectedCharacter()

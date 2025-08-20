@@ -4,8 +4,8 @@ import { Modal } from "../../../../components/modal"
 import { useCharacterSkills } from "./use-character-skills.hook"
 import { SkillsListModal } from "../../../../components/skills-list-modal"
 import { useBindCharacterSkill } from "./use-bind-character-skill.hook"
-import { useSelectedCharacter } from "../../../../../stores/selected-character.store"
 import { ContentCard } from "../card"
+import { useSelectedCharacter } from "../../../../../stores/character/selected-character.store"
 
 export const CharacterContentSkills = () => {
     const { isActive, navigate, setIsActive, setSearch, skills  } = useCharacterSkills()

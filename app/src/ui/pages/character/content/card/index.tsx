@@ -2,9 +2,9 @@ import Styles from "./styles.module.css"
 
 import { PropsWithChildren } from "react"
 import { Button } from "../../../../components/button"
-import { useUserAuth } from "../../../../../stores/user-auth.store"
-import { useSelectedCharacter } from "../../../../../stores/selected-character.store"
+import { useUserAuth } from "../../../../../stores/user/user-auth.store"
 import { Character } from "../../../../../interfaces/domains/character.interface"
+import { useSelectedCharacter } from "../../../../../stores/character/selected-character.store"
 
 type CharacterList = {
     [K in keyof Character]: Character[K] extends any[] ? K: never

@@ -1,7 +1,7 @@
 import { useMutation } from "@tanstack/react-query"
 import { loginUser } from "../services/user.service"
 import { LoginUser } from "../interfaces/login-user.interface"
-import { useUserAuth } from "../stores/user-auth.store"
+import { useUserAuth } from "../stores/user/user-auth.store"
 import { useNavigate } from "react-router"
 
 export const useUpdateUser = () => {

@@ -1,4 +1,4 @@
-import { useSelectedClass } from "../../../stores/selected-class.store"
+import { useSelectedClass } from "../../../stores/class/selected-class.store"
 import { AttributeCard } from "../attribute-card"
 import { CardWrapper } from "../card-wrapper"
 import { StarIcon } from "../icons/star"

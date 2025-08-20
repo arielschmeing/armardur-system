@@ -1,10 +1,10 @@
 import { useSuspenseQuery } from "@tanstack/react-query"
 import { useParams } from "react-router"
 import { getCharacter } from "../../../services/character.service"
-import { useUserAuth } from "../../../stores/user-auth.store"
-import { useSelectedCharacter } from "../../../stores/selected-character.store"
+import { useUserAuth } from "../../../stores/user/user-auth.store"
 import { useEffect } from "react"
 import { Attributes } from "../../../interfaces/domains/attributes.interface"
+import { useSelectedCharacter } from "../../../stores/character/selected-character.store"
 
 export type NavigateType = 
     "general" | 

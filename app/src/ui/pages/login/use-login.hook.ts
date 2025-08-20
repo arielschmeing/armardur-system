@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router"
 import { useEffect } from "react"
 import { useForm } from "../../../hooks/use-form.hook"
-import { useUserAuth } from "../../../stores/user-auth.store"
+import { useUserAuth } from "../../../stores/user/user-auth.store"
 import { LoginUser, validations } from "../../../interfaces/login-user.interface"
 import { useUpdateUser } from "../../../hooks/use-update-user.hook"
 

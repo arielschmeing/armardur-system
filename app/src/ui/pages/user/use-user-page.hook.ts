@@ -1,13 +1,14 @@
 import { useSuspenseQuery, } from "@tanstack/react-query"
-import { useParams } from "react-router"
+import { useLocation, useParams } from "react-router"
 import { getUser } from "../../../services/user.service"
-import { useUserAuth } from "../../../stores/user-auth.store"
+import { useUserAuth } from "../../../stores/user/user-auth.store"
 import { useSearch } from "../../../hooks/use-search.hook"
 import { Character } from "../../../interfaces/domains/character.interface"
 
 export const useUserPage = () => {
     const { token, updateUser, payload  } = useUserAuth()
     const { idUser, idCharacter } = useParams()
+    const { pathname } = useLocation()
 
     const handlerGetUser = async () => {
         const newUser = await getUser({
@@ -39,6 +40,7 @@ export const useUserPage = () => {
         idCharacter,
         user,
         characters: filter,
-        setCharacters: setSearch
+        setCharacters: setSearch,
+        pathname
     }
 }

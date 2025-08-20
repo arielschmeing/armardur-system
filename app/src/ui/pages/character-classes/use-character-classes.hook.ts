@@ -1,4 +1,4 @@
-import { useUserAuth } from "../../../stores/user-auth.store"
+import { useUserAuth } from "../../../stores/user/user-auth.store"
 import { getClasses } from "../../../services/character-class.service"
 import { useSuspenseQuery } from "@tanstack/react-query"
 import { useSearch } from "../../../hooks/use-search.hook"

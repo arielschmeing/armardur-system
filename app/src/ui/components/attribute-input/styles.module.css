@@ -1,17 +1,19 @@
-.input__container {
+.container {
+    white-space: nowrap;
     display: flex;
     color: var(--dark-light);
-    align-items: start;
-    margin: var(--scale) 0;
+    justify-content: center;
+    margin: var(--scale) auto;
+    width: 80%;
 
     & > label {
         margin-left: var(--scale);
         width: 100%;
 
         & > input {
+            width: 100%;
             padding: 0;
             padding-left: calc(2 * var(--scale));
-            width: 100%;
         }
     }
 }

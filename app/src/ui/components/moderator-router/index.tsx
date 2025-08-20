@@ -1,5 +1,5 @@
 import { Navigate, Outlet, useLocation } from "react-router"
-import { useUserAuth } from "../../../stores/user-auth.store"
+import { useUserAuth } from "../../../stores/user/user-auth.store"
 import { Permission } from "../../../enums/permission.enum"
 
 export const ModeratorRouter = () => {

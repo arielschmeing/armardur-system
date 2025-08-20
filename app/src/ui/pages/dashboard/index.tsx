@@ -2,16 +2,12 @@ import Styles from "./styles.module.css"
 
 import { PageWrapper } from "../../components/page-wrapper"
 import { IllustrationBlock } from "../../components/illustration-block"
-import { useUserAuth } from "../../../stores/user-auth.store"
-import { hasModeratorPermission } from "../../../utils/has-moderator-permission.util"
 import { Logo } from "../../components/logo"
-import { useState } from "react"
-import { illustrations } from "./illustrations"
+import { useDashboard } from "./use-dashboard.hook"
 
 export const DashboardPage = () => {    
-    const { payload } = useUserAuth()
-    const [hasPermission] = useState(hasModeratorPermission(payload()))
-    
+    const { hasPermission, illustrations } = useDashboard()
+
     return (
         <PageWrapper>
             <div className={Styles.header}>

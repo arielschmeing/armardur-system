@@ -1,9 +1,9 @@
 import { useQueryClient } from "@tanstack/react-query"
-import { useUserAuth } from "../../../../../stores/user-auth.store"
+import { useUserAuth } from "../../../../../stores/user/user-auth.store"
 import { Skill } from "../../../../../interfaces/domains/skill.interface"
 import { deleteSkillInCharacter, putSkillInCharacter } from "../../../../../services/character.service"
-import { useSelectedCharacter } from "../../../../../stores/selected-character.store"
 import { Character } from "../../../../../interfaces/domains/character.interface"
+import { useSelectedCharacter } from "../../../../../stores/character/selected-character.store"
 
 export const useBindCharacterSkill =  () => {
     const { token } = useUserAuth()

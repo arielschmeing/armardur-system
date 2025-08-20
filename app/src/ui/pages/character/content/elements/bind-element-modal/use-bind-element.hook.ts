@@ -1,10 +1,10 @@
 import { useState } from "react"
 import { ELEMENTS } from "../../../../../../constants/elements"
-import { useSelectedCharacter } from "../../../../../../stores/selected-character.store"
 import { putElementInCharacter } from "../../../../../../services/character.service"
-import { useUserAuth } from "../../../../../../stores/user-auth.store"
+import { useUserAuth } from "../../../../../../stores/user/user-auth.store"
 import { CharacterElement } from "../../../../../../interfaces/domains/character-element.interface"
 import { useMutation } from "@tanstack/react-query"
+import { useSelectedCharacter } from "../../../../../../stores/character/selected-character.store"
 
 export const useBindElement = () => {
     const [selectElement, setSelectElement] = useState<string | null>(null)

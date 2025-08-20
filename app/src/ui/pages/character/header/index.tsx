@@ -2,7 +2,7 @@ import Styles from "./styles.module.css"
 
 import { Button } from "../../../components/button"
 import { useNavigate } from "react-router"
-import { useSelectedCharacter } from "../../../../stores/selected-character.store"
+import { useSelectedCharacter } from "../../../../stores/character/selected-character.store"
 
 export const CharacterHeader = () => {
     const { selectedCharacter: character } = useSelectedCharacter()

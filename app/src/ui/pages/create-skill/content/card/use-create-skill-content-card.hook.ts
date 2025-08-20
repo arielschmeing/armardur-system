@@ -1,8 +1,8 @@
 import { useMutation } from "@tanstack/react-query"
-import { useCreateSkillStep } from "../../../../../stores/create-skill-step.store"
+import { useCreateSkillStep } from "../../../../../stores/skill/create-skill-step.store"
 import { postSkill } from "../../../../../services/skill.service"
-import { useUserAuth } from "../../../../../stores/user-auth.store"
-import { useCreateSkillData } from "../../../../../stores/create-skill-data.store"
+import { useUserAuth } from "../../../../../stores/user/user-auth.store"
+import { useCreateSkillData } from "../../../../../stores/skill/create-skill-data.store"
 import { useNavigate } from "react-router"
 import { Element } from "../../../../../enums/element.enum"
 

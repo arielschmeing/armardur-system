@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { Character } from "../interfaces/domains/character.interface";
+import { Character } from "../../interfaces/domains/character.interface";
 
 interface SelectedCharacter {
     selectedCharacter: Character | undefined

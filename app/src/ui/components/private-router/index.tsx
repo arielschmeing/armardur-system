@@ -1,5 +1,5 @@
 import { Navigate, useLocation } from "react-router"
-import { useUserAuth } from "../../../stores/user-auth.store"
+import { useUserAuth } from "../../../stores/user/user-auth.store"
 import { Layout } from "../layout"
 import { useEffect, useState } from "react"
 

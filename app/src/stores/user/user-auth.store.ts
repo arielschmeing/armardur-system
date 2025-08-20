@@ -1,8 +1,8 @@
 import { create } from "zustand"
-import { Payload } from "../interfaces/payload.interface"
+import { Payload } from "../../interfaces/payload.interface"
 import { persist } from "zustand/middleware"
-import { TOKEN_KEY } from "../constants/token-key"
-import { User } from "../interfaces/domains/user.interface"
+import { TOKEN_KEY } from "../../constants/token-key"
+import { User } from "../../interfaces/domains/user.interface"
 
 interface UserAuth {
     token: string | null

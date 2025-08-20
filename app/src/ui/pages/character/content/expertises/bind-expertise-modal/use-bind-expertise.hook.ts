@@ -1,9 +1,9 @@
-import { useSelectedCharacter } from "../../../../../../stores/selected-character.store"
 import { putExpertiseInCharacter } from "../../../../../../services/character.service"
-import { useUserAuth } from "../../../../../../stores/user-auth.store"
+import { useUserAuth } from "../../../../../../stores/user/user-auth.store"
 import { useMutation } from "@tanstack/react-query"
 import { EXPERTISES } from "../../../../../../constants/expertises"
 import { useEffect, useState } from "react"
+import { useSelectedCharacter } from "../../../../../../stores/character/selected-character.store"
 
 export const useBindExpertise = () => {
     const [expertises, setExpertises] = useState(EXPERTISES)

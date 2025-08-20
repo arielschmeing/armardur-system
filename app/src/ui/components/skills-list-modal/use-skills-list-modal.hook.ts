@@ -1,5 +1,5 @@
 import { useSuspenseQuery } from "@tanstack/react-query"
-import { useUserAuth } from "../../../stores/user-auth.store"
+import { useUserAuth } from "../../../stores/user/user-auth.store"
 import { useSearch } from "../../../hooks/use-search.hook"
 import { getSkills } from "../../../services/skill.service"
 

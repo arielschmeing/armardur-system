@@ -4,10 +4,14 @@ import { Checkbox } from "../../../../components/checkbox"
 import { Branch } from "../../../../../enums/branch.enum"
 import { ELEMENTS } from "../../../../../constants/elements"
 import { CreateSkillContentCard } from "../card"
-import { CreateSkillChildrenProps } from "../../../../../interfaces/create-skill-children-props.interface"
 import { useCreateSkillLists } from "./use-create-skill-lists.hook"
+import { useCreateSkillData } from "../../../../../stores/skill/create-skill-data.store"
 
-export const CreateSkillContentLists = ({ skill, setValue }: CreateSkillChildrenProps) => {
+export const CreateSkillContentLists = () => {
+    const { skill, setValue } = useCreateSkillData()
+    
+    if(!setValue) return null
+
     const { handlerAddList } = useCreateSkillLists({ skill, setValue })
     
     return (

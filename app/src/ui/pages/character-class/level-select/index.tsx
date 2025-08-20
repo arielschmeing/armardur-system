@@ -4,7 +4,7 @@ import { CardWrapper } from "../../../components/card-wrapper"
 import { Checkbox } from "../../../components/checkbox"
 import { Button } from "../../../components/button"
 import { useScrollNavigation } from "../../../../hooks/use-scroll-navigation.hook"
-import { useSelectedClass } from "../../../../stores/selected-class.store"
+import { useSelectedClass } from "../../../../stores/class/selected-class.store"
 
 const MOVE = 600
 

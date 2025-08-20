@@ -1,7 +1,7 @@
-import { useCharacterNavigate } from "../../../../stores/character-navigate.store"
 import { NavigateType } from "../use-character-page.hook"
 import { CardWrapper } from "../../../components/card-wrapper"
 import { Checkbox } from "../../../components/checkbox"
+import { useCharacterNavigate } from "../../../../stores/character/character-navigate.store"
 
 interface Data {
     text: string

@@ -1,7 +1,7 @@
 import { useState } from "react"
-import { useCharacterNavigate } from "../../../../../stores/character-navigate.store"
-import { useSelectedCharacter } from "../../../../../stores/selected-character.store"
 import { getAttributes } from "../../../../../utils/get-attributes.util"
+import { useSelectedCharacter } from "../../../../../stores/character/selected-character.store"
+import { useCharacterNavigate } from "../../../../../stores/character/character-navigate.store"
 
 export const useCharacterAttributes = () => {
     const { selectedCharacter: character } = useSelectedCharacter()

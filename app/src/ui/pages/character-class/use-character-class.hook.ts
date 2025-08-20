@@ -1,9 +1,9 @@
 import { useSuspenseQuery } from "@tanstack/react-query"
 import { getClass } from "../../../services/character-class.service"
 import { useParams } from "react-router"
-import { useUserAuth } from "../../../stores/user-auth.store"
+import { useUserAuth } from "../../../stores/user/user-auth.store"
 import { useEffect, useState } from "react"
-import { useSelectedClass } from "../../../stores/selected-class.store"
+import { useSelectedClass } from "../../../stores/class/selected-class.store"
 
 export const useCharacterClass = () => {
     const { id } = useParams()

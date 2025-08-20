@@ -14,6 +14,7 @@ import { UserPage } from "./ui/pages/user";
 import { SearchUsers } from "./ui/pages/search/users";
 import { SearchCharacters } from "./ui/pages/search/characters";
 import { CreateCharacterPage } from "./ui/pages/create-character";
+import { CreateCharacterClassPage } from "./ui/pages/create-character-class";
 
 export const router = createBrowserRouter([
     {
@@ -81,6 +82,10 @@ export const router = createBrowserRouter([
                     {
                         path: "skill/create",
                         element: <CreateSkillPage />
+                    },
+                    {
+                        path: "class/create",
+                        element: <CreateCharacterClassPage />
                     }
                 ]
             }

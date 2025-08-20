@@ -5,7 +5,7 @@ import { ClassAttributeCard } from "../../components/class-attributes-card"
 import { ClassHeader } from "./header"
 import { ClassLevelSelect } from "./level-select"
 import { ClassLevelCard } from "./level-card"
-import { useSelectedClass } from "../../../stores/selected-class.store"
+import { useSelectedClass } from "../../../stores/class/selected-class.store"
 
 
 export const CharacterClassPage = () => {

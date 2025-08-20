@@ -1,10 +1,10 @@
 import { useState } from "react"
-import { useUserAuth } from "../../../../../stores/user-auth.store"
-import { useCharacterNavigate } from "../../../../../stores/character-navigate.store"
-import { useSelectedCharacter } from "../../../../../stores/selected-character.store"
+import { useUserAuth } from "../../../../../stores/user/user-auth.store"
 import { CharacterElement } from "../../../../../interfaces/domains/character-element.interface"
 import { deleteElementInCharacter } from "../../../../../services/character.service"
 import { useMutation } from "@tanstack/react-query"
+import { useCharacterNavigate } from "../../../../../stores/character/character-navigate.store"
+import { useSelectedCharacter } from "../../../../../stores/character/selected-character.store"
 
 export const useCharacterElements = () => {
     const [isActive, setIsActive] = useState(false)

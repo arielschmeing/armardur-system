@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: calc(3 * var(--scale)) 0;
+
+    & > button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        margin: 0 var(--scale);
+
+        & > svg {
+            height: 20px;
+        }
+    }
+}

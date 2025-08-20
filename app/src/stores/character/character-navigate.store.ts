@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { NavigateType } from "../ui/pages/character/use-character-page.hook";
+import { NavigateType } from "../../ui/pages/character/use-character-page.hook";
 
 interface CharacterNavigate {
     navigate: NavigateType

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-import { useUserAuth } from "../../../../stores/user-auth.store"
-import { useSelectedClass } from "../../../../stores/selected-class.store"
+import { useUserAuth } from "../../../../stores/user/user-auth.store"
+import { useSelectedClass } from "../../../../stores/class/selected-class.store"
 import { ClassLevel } from "../../../../interfaces/domains/class-level.interface"
 import { useMutation } from "@tanstack/react-query"
 import { deleteSkillInClassLevel, putSkillInClassLevel } from "../../../../services/character-class.service"

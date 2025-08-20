@@ -4,9 +4,12 @@ import { UserCard } from "../../components/user-card"
 import { CharacterPage } from "../character"
 import { useUserPage } from "./use-user-page.hook"
 import { CharactersResumeList } from "../../components/characters-resume-list"
+import { CreateCharacterPage } from "../create-character"
 
 export const UserPage = () => {
-    const { idCharacter, user, characters, setCharacters } = useUserPage()
+    const { idCharacter, user, characters, setCharacters, pathname } = useUserPage()
+
+    if(pathname.includes("character/create")) return <CreateCharacterPage />
 
     if(idCharacter) return <CharacterPage />
 

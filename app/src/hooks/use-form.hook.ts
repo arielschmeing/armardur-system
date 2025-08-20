@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { SetValue } from "../types/set-value.type"
 
 interface FormProps<T> {
     initialData?: T,
@@ -18,7 +19,7 @@ export const useForm = <T>({ initialData = {} as T, validations, onSubmit }: For
     const [data, setData] = useState(initialData)
     const [errors, setErrors] = useState({ messages: {} } as Errors<T>)
 
-    const setValue = (key: keyof T, value: T[keyof T]) => {
+    const setValue = (...[key, value]: SetValue<T>) => {
         setData((prev) => ({ ...prev, [key]: value }))
     }
 

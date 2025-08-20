@@ -1,18 +1,20 @@
-import Styles from "./styles.module.css"
-
 import { Input } from "../../../../components/input"
 import { CreateSkillContentCard } from "../card"
-import { CreateSkillChildrenProps } from "../../../../../interfaces/create-skill-children-props.interface"
+import { AttributeInput } from "../../../../components/attribute-input"
+import { useCreateSkillData } from "../../../../../stores/skill/create-skill-data.store"
 
 const MIN_STATUS = 0
 const MAX_STATUS = 999
 const MAX_LEVEL = 20
 
-export const CreateSkillContentStatus = ({ skill, setValue }: CreateSkillChildrenProps) => {
+export const CreateSkillContentStatus = () => {
+    const { skill, setValue } = useCreateSkillData()
+
+    if(!setValue) return null
+
     return (
         <CreateSkillContentCard part="status">
-            <div className={Styles.input__container}>
-                <p>Level:</p>
+            <AttributeInput title="Level:">
                 <Input 
                     className="light__bg__input"
                     type="number"
@@ -22,10 +24,9 @@ export const CreateSkillContentStatus = ({ skill, setValue }: CreateSkillChildre
                     onChange={(e) => setValue("level", e.target.value)}
                     defaultValue={skill?.level}
                 />
-            </div>
+            </AttributeInput>
 
-            <div className={Styles.input__container}>
-                <p>Distância:</p>
+            <AttributeInput title="Distância:">
                 <Input 
                     className="light__bg__input"
                     type="number"
@@ -35,10 +36,9 @@ export const CreateSkillContentStatus = ({ skill, setValue }: CreateSkillChildre
                     onChange={(e) => setValue("range", e.target.value)}
                     defaultValue={skill?.range}
                 />
-            </div>
+            </AttributeInput>
 
-            <div className={Styles.input__container}>
-                <p>Duração:</p>
+            <AttributeInput title="Duração:">
                 <Input 
                     className="light__bg__input"
                     type="number"
@@ -48,10 +48,9 @@ export const CreateSkillContentStatus = ({ skill, setValue }: CreateSkillChildre
                     onChange={(e) => setValue("duration", e.target.value)}
                     defaultValue={skill?.duration}
                 />
-            </div>
+            </AttributeInput>
 
-            <div className={Styles.input__container}>
-                <p>Conjuração:</p>
+            <AttributeInput title="Conjuração:">
                 <Input 
                     className="light__bg__input"
                     type="number"
@@ -61,7 +60,7 @@ export const CreateSkillContentStatus = ({ skill, setValue }: CreateSkillChildre
                     onChange={(e) => setValue("castTime", e.target.value)}
                     defaultValue={skill?.castTime}
                 />
-            </div>
+            </AttributeInput>
         </CreateSkillContentCard>
     )
 }
