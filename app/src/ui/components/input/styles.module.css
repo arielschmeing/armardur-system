@@ -55,3 +55,22 @@
         width: 100%;
     }
 }
+
+.dark__bg__input {
+    & input {
+        transition: .3s;
+        padding: var(--scale);
+        border: none;
+        outline: none;
+        border-bottom: 1px solid var(--primary);
+        background-color: var(--light);
+    
+        &:focus {
+            border-color: var(--secondary);
+        }
+    }
+
+    & input[type="text"] {
+        width: 100%;
+    }
+}

@@ -1,5 +1,10 @@
+import { PageWrapper } from "../../components/page-wrapper"
+import { CreateCharacterResume } from "./content/resume"
+
 export const CreateCharacterPage = () => {
     return (
-        <h1>TEST</h1>
+        <PageWrapper>
+            <CreateCharacterResume />
+        </PageWrapper>
     )
 }
