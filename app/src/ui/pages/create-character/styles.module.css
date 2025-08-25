@@ -1,0 +1,5 @@
+.title {
+    color: var(--light);
+    font-size: 3em;
+    margin-top: calc(6 * var(--scale));
+}

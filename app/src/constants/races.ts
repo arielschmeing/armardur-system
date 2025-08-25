@@ -1,0 +1,1 @@
+export const RACES = ["HUMAN", "ORC", "ELF", "TIEFLING"]

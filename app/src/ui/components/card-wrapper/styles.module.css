@@ -34,3 +34,7 @@
 .container__big__margin {
     margin: calc(20 * var(--scale)) 0 calc(4 * var(--scale));
 }
+
+.container__medium__margin {
+    margin: calc(6 * var(--scale));
+}

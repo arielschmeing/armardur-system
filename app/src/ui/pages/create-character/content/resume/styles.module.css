@@ -1,0 +1,14 @@
+.container__input {
+    display: flex;
+    align-items: center;
+    margin-bottom: calc(2 * var(--scale));
+
+    & > p {
+        white-space: nowrap;
+        margin-right: var(--scale);
+    }
+
+    & > label, input {
+        width: 100%;
+    }
+}
