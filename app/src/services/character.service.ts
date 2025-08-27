@@ -6,6 +6,7 @@ import { Character } from "../interfaces/domains/character.interface"
 import { ElementInCharacterRequest } from "../interfaces/requests/element-in-character-request.interface"
 import { ExpertiseInCharacterRequest } from "../interfaces/requests/expertise-in-character-request.interface"
 import { Expertise } from "../interfaces/domains/expertise.interface"
+import { CharacterRequest } from "../interfaces/requests/character-request.interface"
 
 const CONTROLLER = "characters"
 
@@ -107,4 +108,12 @@ export const deleteExpertiseInCharacter = async ({ token, characterId, name }: E
     if(response.status === 200) return true
 
     return false
+}
+
+export const postCharacter = async ({ body, classId, token }: CharacterRequest) => {
+    const { status } = await axios.post(`${API_URL}/${CONTROLLER}/class/${classId}`,
+        { ...body },
+        { headers: { "Authorization": `Bearer ${token}` } })
+
+    return status === 200
 }

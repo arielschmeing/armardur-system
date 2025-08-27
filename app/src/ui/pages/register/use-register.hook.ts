@@ -1,9 +1,10 @@
 import { postUser } from "../../../services/user.service"
 import { useForm } from "../../../hooks/use-form.hook"
-import { RegisterUser, validations } from "../../../interfaces/register-user.interface"
+import { RegisterUser } from "../../../interfaces/register-user.interface"
 import { useMutation } from "@tanstack/react-query"
 import { useUpdateUser } from "../../../hooks/use-update-user.hook"
 import { useNavigate } from "react-router"
+import { validations } from "../../../interfaces/validations/register-user.validations"
 
 export const useRegister = () => {
     const navigate = useNavigate()

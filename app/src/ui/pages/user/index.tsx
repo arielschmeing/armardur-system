@@ -4,7 +4,7 @@ import { UserCard } from "../../components/user-card"
 import { CharacterPage } from "../character"
 import { useUserPage } from "./use-user-page.hook"
 import { CharactersResumeList } from "../../components/characters-resume-list"
-import { CreateCharacterPage } from "../create-character"
+import { CreateCharacterPage } from "../create/create-character"
 
 export const UserPage = () => {
     const { idCharacter, user, characters, setCharacters, pathname } = useUserPage()

@@ -4,7 +4,6 @@ import { RegisterPage } from "./ui/pages/register";
 import { PrivateRouter } from "./ui/components/private-router";
 import { DashboardPage } from "./ui/pages/dashboard";
 import { ErrorSection } from "./ui/components/error-section";
-import { CreateSkillPage } from "./ui/pages/create-skill";
 import { ModeratorRouter } from "./ui/components/moderator-router";
 import { SkillsPage } from "./ui/pages/skills";
 import { CharacterClassesPage } from "./ui/pages/character-classes";
@@ -13,8 +12,9 @@ import { CharacterPage } from "./ui/pages/character";
 import { UserPage } from "./ui/pages/user";
 import { SearchUsers } from "./ui/pages/search/users";
 import { SearchCharacters } from "./ui/pages/search/characters";
-import { CreateCharacterPage } from "./ui/pages/create-character";
-import { CreateCharacterClassPage } from "./ui/pages/create-character-class";
+import { CreateCharacterPage } from "./ui/pages/create/create-character";
+import { CreateSkillPage } from "./ui/pages/create/create-skill";
+import { CreateCharacterClassPage } from "./ui/pages/create/create-character-class";
 
 export const router = createBrowserRouter([
     {

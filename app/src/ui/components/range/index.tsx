@@ -1,18 +1,16 @@
 import Styles from "./styles.module.css"
 
-import { Badge } from "../badge"
-import { ElementType, InputHTMLAttributes, useState } from "react"
+import { ElementType, InputHTMLAttributes, ReactNode } from "react"
 
 interface RangeProps extends InputHTMLAttributes<HTMLInputElement> {
     defaultValue: number
     Icon?: ElementType
     name?: string
-    title?: string 
+    title?: string
+    children?: ReactNode
 }
 
-export const Range = ({ defaultValue, Icon, title, name, ...rest }: RangeProps) => {
-    const [value, setValue] = useState(defaultValue)
-    
+export const Range = ({ defaultValue, Icon, title, name, children, ...rest }: RangeProps) => {
     return (
         <label htmlFor={name} className={Styles.container}>
             <div className={Styles.header}>
@@ -21,15 +19,11 @@ export const Range = ({ defaultValue, Icon, title, name, ...rest }: RangeProps) 
             </div>
 
             <div className={Styles.content}>
-                <input type="range" 
-                    onChange={(e) => setValue(Number(e.target.value))}
+                <input type="range"
                     {...rest}
                 />
 
-                <Badge 
-                    type="aura"
-                    value={value}
-                />
+                {children}
             </div>
         </label>
     )

@@ -1,0 +1,828 @@
+{
+  "meta": {
+    "format": "httpie",
+    "version": "1.0.0",
+    "contentType": "collection",
+    "schema": "https://schema.httpie.io/1.0.0.json",
+    "docs": "https://httpie.io/r/help/export-from-httpie",
+    "source": "HTTPie Desktop 2025.2.0"
+  },
+  "entry": {
+    "name": "Armardur",
+    "icon": {
+      "name": "diamond",
+      "color": "purple"
+    },
+    "auth": {
+      "type": "none"
+    },
+    "requests": [
+      {
+        "name": "POST USER",
+        "url": "localhost:8080/users",
+        "method": "POST",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "inherited"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"name\": \"Ariel\",\n  \"email\": \"ariel@proton.me\",\n  \"password\": \"123\"\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "CHANGE NAME",
+        "url": "localhost:8080/users/1/name",
+        "method": "PUT",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbCIsImlkIjoxLCJleHAiOjE3NDYyNDMwMzgsImlhdCI6MTc0NjI0MjQzOCwic2NvcGUiOlsiVVNVQVJJTyJdfQ.aE5NiM-OjBEuOqw1prfHjppivaPKZTuaB5okWQMXMumRUQ_Bsch0iisiKuwAb083k1MO5zo1fuUAUc1poer-6mMNlXIraVsKsCxwmR9QcqkI2B9HJAHcl2cmaAGBVvnYLnVNJx-Fmpfuxdc1IBetEXKMe1p8VO7BeqEoggeJdECRQWzOnR8CHOaXI63Ck2JR_JmfBiEdMr9dpIiLUMQfFqJDkjrKvUMt9CqUnhopML-uWeIcfrykkhszbwmUiDhe4J2g5NONDil6KXCgNg1MdS9b3w47ED6jCp1MUNaWmfgYmwH3tecFL7SdPn9dq3zyuXqAYQdlbnDDtNcN-Em-Hg"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"nome\": \"Ariel\"\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "CHANGE PASSWORD",
+        "url": "localhost:8080/users/1/password",
+        "method": "PUT",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbCIsImlkIjoxLCJleHAiOjE3NDYyNDMwMzgsImlhdCI6MTc0NjI0MjQzOCwic2NvcGUiOlsiVVNVQVJJTyJdfQ.aE5NiM-OjBEuOqw1prfHjppivaPKZTuaB5okWQMXMumRUQ_Bsch0iisiKuwAb083k1MO5zo1fuUAUc1poer-6mMNlXIraVsKsCxwmR9QcqkI2B9HJAHcl2cmaAGBVvnYLnVNJx-Fmpfuxdc1IBetEXKMe1p8VO7BeqEoggeJdECRQWzOnR8CHOaXI63Ck2JR_JmfBiEdMr9dpIiLUMQfFqJDkjrKvUMt9CqUnhopML-uWeIcfrykkhszbwmUiDhe4J2g5NONDil6KXCgNg1MdS9b3w47ED6jCp1MUNaWmfgYmwH3tecFL7SdPn9dq3zyuXqAYQdlbnDDtNcN-Em-Hg"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"senha\": \"123\"\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "LOGIN",
+        "url": "localhost:8080/users/login",
+        "method": "POST",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "inherited"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"email\": \"ariel@proton.me\",\n  \"password\": \"123\"\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "ADD ROLES",
+        "url": "localhost:8080/users/1/role",
+        "method": "PUT",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbCIsImlkIjoxLCJleHAiOjE3NTA5OTY2NDAsImlhdCI6MTc1MDk4MTA0MCwic2NvcGUiOlsiVVNFUiJdfQ.TDTYWyBNcQASRmjkhbwxqENN5-vBR_zRPiR6KLuarHnQkSyv3soUvq8Wlr2lsHNoMUBur_vMIby-T-4I8xazcTm3CC3XahsVTweEmJYnEIw2GPyKwNBStxQVbQkOO1Vj_th_iNAE3E3NSNrtFIUtcXdpWi264u2YJgrh76l8MfWrMgJ83GBHdfHztdZbneVuHz12VcymB_YApqHEFu2XYERSn4oIQswbdxBvxsXM0NCI7wd2zbD-WF_xsz62X2_AqhnoTlTGNGMQCBJrahzHMdCDi_JzTcyUmEEekKmOiNqhoZ4Cf5ABqvda1k-8egnjq8hUCssp2SAh6McgnGwwOw"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"role\": \"ADMIN\"\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "GET USERS",
+        "url": "localhost:8080/users",
+        "method": "GET",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbCIsImlkIjoxLCJleHAiOjE3NTUwOTYzOTIsImlhdCI6MTc1NTA4MDc5Miwic2NvcGUiOlsiVVNFUiIsIkFETUlOIl19.myLKawtAeO8ffFehRUoeH0_40KVMNFuzt-ZhGcav7QSAYQKjTOBU-cM3lT6Sq40mMqLzZV2GTig2lpH5xfHYbmPZBwvPBSxpbPrARPrGthBnTDFnbh_RWmxkZ6aTBO5wetDUNmMuR9rQYQnCEcGgt6cS4dinim6k_MLTBc6KjLQDvC7VU3vg08XU4t_aaHzNh07IWszscEwuNgellDVUUAuuZSRm9wY4PkcNcGaIFoOzyr_adOFeVluYoWfwjIUcXHj0WU-THQ7e8CVE1CcJlmJNo1UcGe-QKBm8CkQAnU6BmOZcEbdAsn37_y2FXoyjeTPAumdQpy34mflQ962Zzw"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "GET USER",
+        "url": "localhost:8080/users/1",
+        "method": "GET",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbCIsImlkIjoxLCJleHAiOjE3NTMyMzM5ODYsImlhdCI6MTc1MzIxODM4Niwic2NvcGUiOlsiVVNFUiIsIkFETUlOIl19.YshAxnpRyDTMdO6TrVhQCcBWoWr1scNg6yAFEXnUqmoD8Gxu0a8DD50qwlhgRnx2nEzHFHckuB1D9IOWF1PRAdDo0QqPHBiVlcXXJsVwU_6IBAJZzm0y6_g4fH30zHqCzBZLKMWkRZyo5VPQj5uZJOHQ1FfF8y_gejPimwd2Me8q-krt2BHx4l7U6jPeRNGadeb3E5dFxi2s4M296OdhxfZI2TP9X1kzYfBLmG3BCc-4PoqQRDjfpu7r_KvncT_5Mlyaii7h7Bx3VNhy7S-KwE3g5sDo-0LZeWO1HDYpGaXTqXtVjH1w04GSs4_ItVvoht8ei2qk-ziS2HwRtzut7A"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "POST SKILL",
+        "url": "localhost:8080/skills",
+        "method": "POST",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbCIsImlkIjoxLCJleHAiOjE3NTA5OTY2NTAsImlhdCI6MTc1MDk4MTA1MCwic2NvcGUiOlsiVVNFUiIsIkFETUlOIl19.jwpmJDtEPSB-4OpZAr-xunatUsvmsvcmwE2bidsAzTWM8LJw6zxD5Vjtoy7Io-TUOzEmShxVHtctUhUEF2aZ-F8bsIigK8W6MwYuQugnNLIPVtqACMhWsrEhhLvtWQDJmRTdDXCb7FIAcDwsFHLtObQqeggOIdFmlEOIXWNK1sdtqvnbyiwhK8tMFj1GL3emAd2-Q9qsJI0lo_BJBiYRaMwTa08pd6p2XSsCJocgCl2OKCUkYJYKV368inNhuvvBaYJSqw__3q98tHDvpMfIPlgpCW0k-3GQGbh1jj2vq9hwm2TrwhqgElDqIeehtQeyqrCB2jrACIP5a-Cr3JLNCA"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"name\": \"Bola de Plasma\",\n  \"level\": 2,\n  \"range\": 2,\n  \"duration\": 3,\n  \"castTime\": 1,\n  \"description\": \"Uma magia poderosa!\",\n  \"branches\": [\n    \"AURA\",\n    \"DEFENSE\"\n  ],\n  \"elements\": [\n    \"LUMINOS\",\n    \"IGNIS\"\n  ]\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "GET SKILLS",
+        "url": "localhost:8080/skills",
+        "method": "GET",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbCIsImlkIjoxLCJleHAiOjE3NTMyMzQ5NTYsImlhdCI6MTc1MzIxOTM1Niwic2NvcGUiOlsiVVNFUiIsIkFETUlOIl19.kJ08d47IFdQzuItfkv6nY2I8avredmhpO2S4PtNIwSdzMSWzWl4v3EG9f35qpxEODMjzedghVq5APcbaM7567jqW7Ekf5MwXWENqLKuisr33widdv2r6G2IsZFzmuiVlKMHfP8Mu4z0dZlnWDvWNt8mFG9E3PuGyLW6OcOSrABrTp9nxT9d449kZ-1b06fXPO1FbkN89r0XjN1JqyV1Qq34_OXgMXTiHij0RksuAbB7g9ltdtA511wJd1OAaTE9NaRKPH-1q85nM5-OFjCZjKcSa_Ecd2dbrYvHrQKPnDxbX-_TKgkAfoyA78t08WSatBoUDsOJUojjmYhHtlsAqNg"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "POST CLASS",
+        "url": "localhost:8080/classes",
+        "method": "POST",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbCIsImlkIjoxLCJleHAiOjE3NTA5OTU4MTQsImlhdCI6MTc1MDk4MDIxNCwic2NvcGUiOlsiVVNFUiIsIkFETUlOIl19.Z3n1WxWhD7kP_Dr3zZM8e5FT-1NA20FkqV30bzAqeFlWFNFd3iruB9c84ZRukHrGX3PwItanyG_qj3uyqC4MY0FBIatDV-QQOMbVmteB-tqWZ1c0i_-IaB28fCC8wN83qivF0GjNSR2ynlaXHwtgJiSJxgQQSxJLB3lY4RzQgJ0ZwsTNWt7aAhd4Py2QgokoWNa8IqDq7Ujy_Tfq-MLynUkT9n0kPoxkWklRGrJBDOhsdLKMopCn7YX_RJ2D0cy8zb3MZz4gppnj65urd8ZEogLXAXNJpMsZikygmUKfQw5CV1GDGvok5lTDUW6T44171_iIdFjp6bmsFnlaSnhmjA"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"name\": \"Mago Necromance\",\n  \"description\": \"Mestres das artes arcanas, os Magos Arcanos dominam o tecido da realidade através do conhecimento profundo das escolas de magia. Seu poder cresce exponencialmente com o estudo e prática, tornando-os devastadores em combate à distância.\",\n  \"difficultClass\": \"10\",\n  \"dieHealth\": \"8\",\n  \"baseHealth\": \"10\",\n  \"physicalMod\": \"STRENGTH\",\n  \"casterMod\": \"MENTAL\"\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "GET CLASSES",
+        "url": "localhost:8080/classes",
+        "method": "GET",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbHMiLCJpZCI6NCwiZXhwIjoxNzU1MDQ2NjcwLCJpYXQiOjE3NTUwMzEwNzAsInNjb3BlIjpbIlVTRVIiXX0.jXexa46-54Q_KEhHbe_FBi0NgqrcZojnxDpanc8j1MzV7z9Gys82c0kyG5tnBweVBQWCpFTv_7jDNrTrnrgguVoyQ9CHYMk2bSUi4mG1uChwldeQGkS_m1hPk6zE12PAQj2Sr7u0VJ6KssqnQz_3Tn9FWa57YY0dtKOMKfXxpKKIW-w296cZeQIBkVrrtG2aGf-cqkx_rTgngyfe_3tJD5trjGE4DyuupCB8Vaen4J8CQC3LYHmAqdzkSGAwat4j0jTbbxe6wsU4hlNH0Hq5R042Hq7eBpCPP4oEZKf8KZmtTwflMioJ_kuUNxcPkd-T_Y3iIJh5guJdA1yU6DOv5g"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "GET CLASS",
+        "url": "localhost:8080/classes/1",
+        "method": "GET",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbCIsImlkIjoxLCJleHAiOjE3NTMyMzQ5NTYsImlhdCI6MTc1MzIxOTM1Niwic2NvcGUiOlsiVVNFUiIsIkFETUlOIl19.kJ08d47IFdQzuItfkv6nY2I8avredmhpO2S4PtNIwSdzMSWzWl4v3EG9f35qpxEODMjzedghVq5APcbaM7567jqW7Ekf5MwXWENqLKuisr33widdv2r6G2IsZFzmuiVlKMHfP8Mu4z0dZlnWDvWNt8mFG9E3PuGyLW6OcOSrABrTp9nxT9d449kZ-1b06fXPO1FbkN89r0XjN1JqyV1Qq34_OXgMXTiHij0RksuAbB7g9ltdtA511wJd1OAaTE9NaRKPH-1q85nM5-OFjCZjKcSa_Ecd2dbrYvHrQKPnDxbX-_TKgkAfoyA78t08WSatBoUDsOJUojjmYhHtlsAqNg"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "BIND SKILL WITH CLASS",
+        "url": "localhost:8080/classes/2/level/1/skill/1",
+        "method": "PUT",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbCIsImlkIjoxLCJleHAiOjE3NTA2NDc2NjQsImlhdCI6MTc1MDYzMjA2NCwic2NvcGUiOlsiVVNFUiIsIkFETUlOIl19.JpO4oTrhgAS-nnFccqQcHXYo0i84lC_CHORLksSQs5W3gNMStPqKU66JkYK3UrFj1GY-y_CLvb8tEkmTs_osQJNuduOOOoi_OS-vieT5swy3hRNCaiUSUVuGv2aE2mi8dTs_aft4T39-KTI1OLny64bVvO9_fc8fK3tD9nVmY71iTTYqHLzKImCP72MPUat3-uSt1Eh6DnGgwFgsLR8m5ij-cE-bj-fw_rV8rodVdjOZhfH0QaMMMeaOKnrd5Em6aQys27aWJ9RE18rkj5g3G6NEHIkOdgl7l8Azvz0Xn2YNTYnA_TP4oFSHK8IzvGcbiQ6ujzWT8w2azWGTKFppbQ"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "REMOVE BIND SKILL IN CLASS",
+        "url": "localhost:8080/classes/1/level/1/skill/1/remove",
+        "method": "DELETE",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbCIsImlkIjoxLCJleHAiOjE3NTA2NDc2NjQsImlhdCI6MTc1MDYzMjA2NCwic2NvcGUiOlsiVVNFUiIsIkFETUlOIl19.JpO4oTrhgAS-nnFccqQcHXYo0i84lC_CHORLksSQs5W3gNMStPqKU66JkYK3UrFj1GY-y_CLvb8tEkmTs_osQJNuduOOOoi_OS-vieT5swy3hRNCaiUSUVuGv2aE2mi8dTs_aft4T39-KTI1OLny64bVvO9_fc8fK3tD9nVmY71iTTYqHLzKImCP72MPUat3-uSt1Eh6DnGgwFgsLR8m5ij-cE-bj-fw_rV8rodVdjOZhfH0QaMMMeaOKnrd5Em6aQys27aWJ9RE18rkj5g3G6NEHIkOdgl7l8Azvz0Xn2YNTYnA_TP4oFSHK8IzvGcbiQ6ujzWT8w2azWGTKFppbQ"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "POST CHAR",
+        "url": "localhost:8080/characters/class/1",
+        "method": "POST",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbHMiLCJpZCI6NCwiZXhwIjoxNzU1MDQ3MDI3LCJpYXQiOjE3NTUwMzE0MjcsInNjb3BlIjpbIlVTRVIiXX0.AIqhhIcrEqSxKG9vat6ATVQG9hx1qjpCEiPytoBLtXq069u0VUdfm-LviK1gDVE9oSB9SUrWt62a8AHJpf2PaUuiTpaoFnKIi6RwVkpdD-xWNaBmvZZKUWK16nv4a3oIW3tEUnVjKLYs9L-cO93W6I5g4h1gBSMY75_pthr3W1nvZ_jD1gfngL_Dms_jlY2yoWuPzRUmawJ8O2HXJ7HvmnMojv5-qJd2KFx8tTb6vK_AH_BM62U2jmyjSsdLmB_dZ7AqpL5f7swYpN1vJHRV3Aqce8hJliI6nOmfCTEG5GlfydNdvvQim8wh1eK2pbo_Hf5tgN_0VYYHVvjj8d7FPw"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"name\": \"RODOLFO\",\n  \"race\": \"HUMAN\",\n  \"image\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Funiversorpg.com%2Fwp-content%2Fuploads%2F2017%2F07%2Fcapa_antecedente_mestre_rpg.jpg%3Ffit%3D960%252C540%26ssl%3D1&f=1&nofb=1&ipt=d3ae7c4a38ab7f7cbbf41409038828b31f4fc46ad961a754fb8a31e7143deb42\",\n  \"hp\": 19,\n  \"strength\": 12,\n  \"dexterity\": 14,\n  \"constitution\": 10,\n  \"mental\": 16,\n  \"wisdom\": 18,\n  \"charisma\": 12,\n  \"elemental\": 20\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "GET CHARS",
+        "url": "localhost:8080/characters",
+        "method": "GET",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbHMiLCJpZCI6NCwiZXhwIjoxNzU1MDQ3MDI3LCJpYXQiOjE3NTUwMzE0MjcsInNjb3BlIjpbIlVTRVIiXX0.AIqhhIcrEqSxKG9vat6ATVQG9hx1qjpCEiPytoBLtXq069u0VUdfm-LviK1gDVE9oSB9SUrWt62a8AHJpf2PaUuiTpaoFnKIi6RwVkpdD-xWNaBmvZZKUWK16nv4a3oIW3tEUnVjKLYs9L-cO93W6I5g4h1gBSMY75_pthr3W1nvZ_jD1gfngL_Dms_jlY2yoWuPzRUmawJ8O2HXJ7HvmnMojv5-qJd2KFx8tTb6vK_AH_BM62U2jmyjSsdLmB_dZ7AqpL5f7swYpN1vJHRV3Aqce8hJliI6nOmfCTEG5GlfydNdvvQim8wh1eK2pbo_Hf5tgN_0VYYHVvjj8d7FPw"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "GET CHAR",
+        "url": "localhost:8080/characters/1",
+        "method": "GET",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbCIsImlkIjoxLCJleHAiOjE3NTMyMzQ5NTYsImlhdCI6MTc1MzIxOTM1Niwic2NvcGUiOlsiVVNFUiIsIkFETUlOIl19.kJ08d47IFdQzuItfkv6nY2I8avredmhpO2S4PtNIwSdzMSWzWl4v3EG9f35qpxEODMjzedghVq5APcbaM7567jqW7Ekf5MwXWENqLKuisr33widdv2r6G2IsZFzmuiVlKMHfP8Mu4z0dZlnWDvWNt8mFG9E3PuGyLW6OcOSrABrTp9nxT9d449kZ-1b06fXPO1FbkN89r0XjN1JqyV1Qq34_OXgMXTiHij0RksuAbB7g9ltdtA511wJd1OAaTE9NaRKPH-1q85nM5-OFjCZjKcSa_Ecd2dbrYvHrQKPnDxbX-_TKgkAfoyA78t08WSatBoUDsOJUojjmYhHtlsAqNg"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "ADD EXPERTISE",
+        "url": "localhost:8080/characters/1/expertise",
+        "method": "PUT",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbCIsImlkIjoxLCJleHAiOjE3NTM4MDUyNzAsImlhdCI6MTc1Mzc4OTY3MCwic2NvcGUiOlsiVVNFUiIsIkFETUlOIl19.KLajIHLb6VSsrpjSGYaG5TPSaq3z5oeMxLsgjyn2a6ffKBDMjz8NUD_ZFmiE6EQkjSv7qPXWvOHjASXbrp6yZ3G0anUYpbCmvMUyLo5Yz8nHqVdxzMfNZeUeDj1MJxFLskKt75bQd2Li-8zPjgUtWLUFdwFzX6yrXUsrvq7W8lSMsD5QO8cxQvtJRI_8z_mpHUEvpxefsYbsp_J0f1CD0K-Z97W2gP4x9Yr_hL9PJxHSjE4rUvutYrI-Y0_aYvOrcYW3bWXbzkOPzFLSSDlASewx8nmUsiLFJ_Vsrn_JydH1d4Fdrt85vHY58ZYIOfMCkqJC76opfgEo7h5-IfDGwA"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"name\": \"STEALTH\"\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "REMOVE EXPERTISE",
+        "url": "localhost:8080/characters/1/expertise",
+        "method": "DELETE",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbCIsImlkIjoxLCJleHAiOjE3NTMyMzQ5NTYsImlhdCI6MTc1MzIxOTM1Niwic2NvcGUiOlsiVVNFUiIsIkFETUlOIl19.kJ08d47IFdQzuItfkv6nY2I8avredmhpO2S4PtNIwSdzMSWzWl4v3EG9f35qpxEODMjzedghVq5APcbaM7567jqW7Ekf5MwXWENqLKuisr33widdv2r6G2IsZFzmuiVlKMHfP8Mu4z0dZlnWDvWNt8mFG9E3PuGyLW6OcOSrABrTp9nxT9d449kZ-1b06fXPO1FbkN89r0XjN1JqyV1Qq34_OXgMXTiHij0RksuAbB7g9ltdtA511wJd1OAaTE9NaRKPH-1q85nM5-OFjCZjKcSa_Ecd2dbrYvHrQKPnDxbX-_TKgkAfoyA78t08WSatBoUDsOJUojjmYhHtlsAqNg"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"name\": \"STEALTH\"\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "ADD ELEMENT",
+        "url": "localhost:8080/characters/1/element",
+        "method": "PUT",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbCIsImlkIjoxLCJleHAiOjE3NTE2NzQ2ODMsImlhdCI6MTc1MTY1OTA4Mywic2NvcGUiOlsiVVNFUiIsIkFETUlOIl19.WBo5RSAtLbAGjnR9Qyd1CdwVjNUlLMMBYNbY1xKQVpVJTs9cvlKLplwsNafTAjGFQxzxEt0eNUE4oy9AvX_ksYXMzSTkoKMSUHuNB-Vq9fkHLVKvhQMUghy_aJYLwF7Q7Jvn7aaF2fONS3Y5J5s2pOTjRAbAOkZsPU3cwSxO7SSYElEYoa5Zodx-aBt7EaCVg2HRvk6PAMcvW-LF8i-2YUEFEPR1hzeNmp9sBPPfAkvt2UZS_uzrC8z9SzSTGyj0p0Dcj3IgI5jaDHkbCrpm5oHH14EXDqPfj5fddoZUQuNUF94MOIv74azCU8HkIPVdgQmToyQUQ-cJKd7K8sl6dQ"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"name\": \"ASTRALITH\"\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "REMOVE ELEMENT",
+        "url": "localhost:8080/characters/1/element",
+        "method": "DELETE",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbCIsImlkIjoxLCJleHAiOjE3NTE2NzQ2ODMsImlhdCI6MTc1MTY1OTA4Mywic2NvcGUiOlsiVVNFUiIsIkFETUlOIl19.WBo5RSAtLbAGjnR9Qyd1CdwVjNUlLMMBYNbY1xKQVpVJTs9cvlKLplwsNafTAjGFQxzxEt0eNUE4oy9AvX_ksYXMzSTkoKMSUHuNB-Vq9fkHLVKvhQMUghy_aJYLwF7Q7Jvn7aaF2fONS3Y5J5s2pOTjRAbAOkZsPU3cwSxO7SSYElEYoa5Zodx-aBt7EaCVg2HRvk6PAMcvW-LF8i-2YUEFEPR1hzeNmp9sBPPfAkvt2UZS_uzrC8z9SzSTGyj0p0Dcj3IgI5jaDHkbCrpm5oHH14EXDqPfj5fddoZUQuNUF94MOIv74azCU8HkIPVdgQmToyQUQ-cJKd7K8sl6dQ"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"name\": \"ASTRALITH\"\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "ADD SKILL IN CHAR",
+        "url": "localhost:8080/characters/1/skill/1",
+        "method": "PUT",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbCIsImlkIjoxLCJleHAiOjE3NTA5MTQ4NTEsImlhdCI6MTc1MDg5OTI1MSwic2NvcGUiOlsiVVNFUiIsIkFETUlOIl19.JcTBd52xNA7J21VlCg4DgMycW__Fo7VcuA9WLCIdIrK8fvbKsGy3tXsoWgL5a2sEzy_xGkyebRzsSoqFfJeTC3GEXRyAEGz8o8Ou5DEfnoOdynH7PZMRhWt6GxGRj29OD1e7PGNOOjKMF4e9U1TySMeqVqCp6h_yFpg5Z_cdJNiqQ82oXL-S9CVcqMNyFK9GT799JrnrHpHKhhq1hkUPUcGINameNpZHGWj39LWyb_PlCHWk9Tl0hFDqMDVQmTeFek3VJicSgL1XbUewMkf_mJAy8O8rn9KC6II5Pd--OuqmgiQRm0e9REiCTo3Vnbfna1FUnHyH3bwHPaU-VomUwA"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "REMOVE SKILL IN CHAR",
+        "url": "localhost:8080/characters/1/skill/1",
+        "method": "DELETE",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbCIsImlkIjoxLCJleHAiOjE3NTE1MzAzNTYsImlhdCI6MTc1MTUxNDc1Niwic2NvcGUiOlsiVVNFUiIsIkFETUlOIl19.FgkO8Ag920uKIR1d3nwM3qu6D4IqWloTzChiIIocOq5728h4Bjm6jzBPk94pxOw_AbAdlnZJfSFuoJo5_-ulFEHmslSpoFColDUI_2ei8AuIstlv55d3agGaW78CnWn4sS2dgfzmOL2K-8dJqF2hjxLvlTJ_bZjvbaZtSWq_KuNhFUdhuK6Ffj28dWnEFm4qG2BAgnqAHsS3AUliiZs47TRJ_oC1twZvDipEdTDA31Fw7RJiN3VIg87j-bVpXRKaAHUOZE0uLiOoxC7hkS98Lk5om-uXfYk2MYAf7KN7KPOrPJRSoOYGzK-nW5CGMcRJLeejlhyFNDWz1-G-LEXIQA"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      },
+      {
+        "name": "CHAR LEVEL UPDATE",
+        "url": "localhost:8080/characters/4/update/level",
+        "method": "PUT",
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "auth": {
+          "type": "bearer",
+          "credentials": {
+            "username": "",
+            "password": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhcm1hcmR1ci1hcGkiLCJzdWIiOiJBcmllbCIsImlkIjoyLCJleHAiOjE3NTEwODc1NjYsImlhdCI6MTc1MTA3MTk2Niwic2NvcGUiOlsiVVNFUiJdfQ.luMHd_6xGn389tasexg62at7osePK6ZWUUM-gLDS8Vr_KbV-tQvwTwDQRiBotuFStw6pZltYhF-U5FIbZS5bq_yoPNYr-N37DCsllBJ7R8xb1bJRWm_3F4PCcfsPwP8Bu8QlWDwBMeA0-LHrAfTNXsX1mYvqUwm1o4weTOVt-H4pC2xRE_mXMDUiohSGwaOAbcag4RKBb6r0jxZ-HTB-SNdBQkRjSxpVD2wtCXheag7-j6moAvrKsMbS5snFZJwWFnWxkv-HxvgXKWmNPqL9xxt8yQyv-9-bzVmF9owG4hssH-6K2CuqbFI7ObQj3-ch7OXr3rQqfhQnEoUq94j8CQ"
+          },
+          "target": "headers"
+        },
+        "body": {
+          "type": "text",
+          "file": {
+            "name": ""
+          },
+          "text": {
+            "value": "{\n  \"value\": 15\n}",
+            "format": "application/json"
+          },
+          "form": {
+            "isMultipart": false,
+            "fields": []
+          },
+          "graphql": {
+            "query": "",
+            "variables": ""
+          }
+        }
+      }
+    ]
+  }
+}
