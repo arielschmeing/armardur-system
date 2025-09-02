@@ -1,12 +1,9 @@
 .container {
-    margin-bottom: calc(4 * var(--scale));
     width: 1080px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--light-medium);
-    padding: calc(2 * var(--scale));
-    padding-bottom: calc(4 * var(--scale));
+    gap: 20px;
 
     & > button {
         display: flex;

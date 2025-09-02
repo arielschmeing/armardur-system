@@ -10,7 +10,11 @@ interface CharacterResumeHeaderProps {
 export const CharacterResumeHeader = ({ character }: CharacterResumeHeaderProps) => {
     return (
         <div className={Styles.container}>
-            <img src={character.image} alt="Avatar" />
+            <img 
+                src={character.image} 
+                alt="Avatar" 
+                onError={(e) => (e.currentTarget.src = "/logos/logo-armardur-bg-white.png")}
+            />
             
             <div>
                 <div>

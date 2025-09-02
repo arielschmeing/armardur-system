@@ -4,6 +4,7 @@ import { PageWrapper } from "../../../components/page-wrapper"
 import { SearchBar } from "../../../components/search-bar"
 import { useSearchUsers } from "./use-search-users.hook"
 import { UserResumeCard } from "../../../components/user-resume-card"
+import { Pagination } from "../../../components/pagination"
 
 export const SearchUsers = () => {
     const { users, setSearch } = useSearchUsers()
@@ -17,6 +18,7 @@ export const SearchUsers = () => {
             />
 
             {users.length !== 0 &&
+            <>
                 <div className={Styles.content}>
                 {users.map((user, index) => 
                     <UserResumeCard 
@@ -25,6 +27,11 @@ export const SearchUsers = () => {
                     />
                 )}
                 </div>
+
+                <Pagination 
+                    max={10}
+                />
+            </>
             }
 
             {users.length === 0 &&
@@ -32,6 +39,7 @@ export const SearchUsers = () => {
                     <p>Ops... não encontramos nenhum usuários esse nome.</p>
                 </div>
             }
+
         </PageWrapper>
     )
 }

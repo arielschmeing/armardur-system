@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: calc(6 * var(--scale));
+    
+    & > button {
+        transition: .2s;
+        margin: var(--scale);
+
+        &:disabled {
+            background-color: var(--light-medium);
+            
+            & > p {
+                cursor: no-drop;
+            }
+        }
+    }
+}
+
+.content {
+    display: flex;
+
+    & > p {
+        font-size: 1em;
+        color: var(--dark);
+        cursor: pointer;
+        display: grid;
+        place-items: center;
+        margin: 0 var(--scale);
+        background-color: var(--light);
+        width: 32px;
+        height: 32px;
+        border-radius: var(--scale);
+    }
+}
+
+#select {
+    background-color: var(--primary);
+    font-weight: 500;
+    color: var(--light);
+}   

@@ -3,6 +3,16 @@
     background-color: var(--light);
     border-radius: calc(2 * var(--scale));
     padding: calc(2 * var(--scale));
+    display: grid;
+    gap: calc(4 * var(--scale));
+    padding: calc(4 * var(--scale));
+    border: 1px solid var(--dark);
+    margin-bottom: calc(6 * var(--scale));
+
+    & > div:not(:last-child) {
+        padding-bottom: calc(4 * var(--scale));
+        border-bottom: 1px solid var(--light-medium);
+    }
 }
 
 .void__content {
