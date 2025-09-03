@@ -1,0 +1,32 @@
+services:
+  db-postgres:
+    image: postgres:15
+    container_name: my-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: armardur
+    volumes:
+      - ./api/data/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    ports:
+      - "5432:5432"
+
+  api:
+    build: ./api
+    container_name: api-armardur
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db-postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db-postgres:5432/armardur
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: password
+
+  app:
+    build: ./app
+    container_name: app-armardur
+    ports:
+      - "80:80"
+    depends_on:
+      - api

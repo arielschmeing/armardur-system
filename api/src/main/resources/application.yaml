@@ -1,13 +1,11 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/armardur
-    username: postgres
-    password: password
-
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
   mvc:
     pathmatch:
       matching-strategy: ANT_PATH_MATCHER
-
   jpa:
     hibernate:
       ddl-auto: validate
