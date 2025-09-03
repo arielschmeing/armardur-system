@@ -28,7 +28,7 @@ Armardur System is a web application backend designed to power the Armardur RPG 
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
 ```bash
 git clone https://github.com/arielschmeing/armardur-system.git
 cd armardur-system
@@ -38,16 +38,17 @@ cd armardur-system
 
 This project can be easily run using **Docker Compose**, which starts the containers for **frontend**, **backend**, and **PostgreSQL**.
 
-1. Requirements
+2. Requirements
+   
 - [Docker](https://docs.docker.com/get-docker/)  
 - [Docker Compose](https://docs.docker.com/compose/)
 
-2. Build and start the containers:
+3. Build and start the containers:
 ```bash
 docker-compose up --build
 ```
 
-3. Access the services:
+4. Access the services:
 
 - **Frontend:** http://localhost (port 80)
 - **Backend:** http://localhost:8080
