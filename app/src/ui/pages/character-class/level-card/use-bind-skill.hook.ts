@@ -36,7 +36,7 @@ export const useBindSkill = (level: number) => {
             token: token!
         })
 
-        const newLevels: ClassLevel[] = selectedClass!.levels.map((l, index) => 
+        const newLevels: ClassLevel[] = selectedClass!.levels!.map((l, index) => 
             index === level - 1
             ? {...l, skills: [...l.skills!, skill]}
             : l

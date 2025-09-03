@@ -20,7 +20,7 @@ export const ClassLevelSelect = ({ setLevel, level }: ClassLevelSelectProps) => 
     return (
         <CardWrapper title="Selecionar Nível" className="container__class" >
             <div className={Styles.container} ref={scrollRef}>
-            {characterClass!.levels.map((classLevel, index) => 
+            {characterClass!.levels!.map((classLevel, index) => 
                 <Checkbox 
                     className="primary__variant__bg" 
                     name="level-selection" 

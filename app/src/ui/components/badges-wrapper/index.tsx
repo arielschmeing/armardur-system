@@ -19,7 +19,7 @@ export const BadgesWrapper = ({ Icon, title, badges }: BadgesWrapperProps) => {
             <div className={Styles.content}>
             {badges?.map((badge, index) => 
                 <Badge 
-                    type={badge.toLowerCase()} 
+                    type="aura" 
                     value={badge.toUpperCase()} 
                     key={index} 
                 />

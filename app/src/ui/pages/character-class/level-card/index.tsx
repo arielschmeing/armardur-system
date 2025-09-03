@@ -18,6 +18,8 @@ export const ClassLevelCard = ({ classLevel }: ClassLevelCardProps) => {
     const { isActive, setIsActive, hasPermission, deleteSkillInLevel } = useClassLevel(classLevel)
     const { addSkillInLevel, selectedClass, setSkills, skills } = useBindSkill(classLevel.level)
 
+    if(!selectedClass || !selectedClass.id) return null
+
     return (
         <CardWrapper title={`Habilidades - Nível ${classLevel.level}`} className="container__class" >
             <AttributeCard title="Bônus de Proficiência:" value={`+${classLevel.proficiency}`} />
@@ -47,7 +49,7 @@ export const ClassLevelCard = ({ classLevel }: ClassLevelCardProps) => {
 
             <Modal isActive={isActive} setIsActive={setIsActive} >
                 <SkillsListModal 
-                    onClick={(skill) => addSkillInLevel(classLevel.level, skill, selectedClass!.id)}
+                    onClick={(skill) => addSkillInLevel(classLevel.level, skill, selectedClass.id!)}
                     setSearch={setSkills}
                     skills={skills}
                     description="Selecione as skills que deseja adicionar à classe"

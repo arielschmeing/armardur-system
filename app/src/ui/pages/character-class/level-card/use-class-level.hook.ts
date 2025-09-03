@@ -19,7 +19,7 @@ export const useClassLevel = (level: ClassLevel) => {
     const { mutateAsync: deleteSkillInClassLevelFn } = useMutation({
         mutationFn: (skillId: number) => deleteSkillInClassLevel({ 
             token: token!, 
-            classId: selectedClass!.id, 
+            classId: selectedClass!.id!, 
             skillId: skillId, 
             level: level.level
         }),
@@ -37,7 +37,7 @@ export const useClassLevel = (level: ClassLevel) => {
     const deleteSkillInLevel = async (skillId: number) => {
         await deleteSkillInClassLevelFn(skillId as number)
 
-        const newLevels: ClassLevel[] = selectedClass!.levels.map(l =>
+        const newLevels: ClassLevel[] = selectedClass!.levels!.map(l =>
             level.level === l.level
             ? {...l, skills: l.skills!.filter(s => s.id !== skillId)}
             : l
@@ -59,7 +59,7 @@ export const useClassLevel = (level: ClassLevel) => {
             token: token!
         })
 
-        const newLevels: ClassLevel[] = selectedClass!.levels.map((l, index) => 
+        const newLevels: ClassLevel[] = selectedClass!.levels!.map((l, index) => 
             index === level - 1
             ? {...l, skills: [...l.skills!, skill]}
             : l

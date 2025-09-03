@@ -12,6 +12,9 @@ interface CharacterClassCardProps {
 }
 
 export const CharacterClassCard = ({ characterClass }: CharacterClassCardProps) => {
+    
+    if(!characterClass.id) return null
+    
     return (
         <CharacterClassWrapper 
             difficultClass={characterClass.difficultClass} 

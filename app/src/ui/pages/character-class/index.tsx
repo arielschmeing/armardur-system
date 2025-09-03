@@ -12,7 +12,7 @@ export const CharacterClassPage = () => {
     const { selectedClass, level, setLevel } = useCharacterClass()
     const { selectedClass: characterClass } = useSelectedClass()
 
-    if(!selectedClass) return null
+    if(!selectedClass || !characterClass || !characterClass.levels) return null
     
     return (
         <PageWrapper hasSuspense>
@@ -25,7 +25,7 @@ export const CharacterClassPage = () => {
             />
 
             <ClassLevelCard 
-                classLevel={characterClass!.levels[level - 1]} 
+                classLevel={characterClass.levels[level - 1]} 
             />
         </PageWrapper>
     )
