@@ -34,6 +34,27 @@ git clone https://github.com/arielschmeing/armardur-system.git
 cd armardur-system
 ```
 
+#### With Docker Compose:
+
+This project can be easily run using **Docker Compose**, which starts the containers for **frontend**, **backend**, and **PostgreSQL**.
+
+1. Requirements
+- [Docker](https://docs.docker.com/get-docker/)  
+- [Docker Compose](https://docs.docker.com/compose/)
+
+2. Build and start the containers:
+```bash
+docker-compose up --build
+```
+
+3. Access the services:
+
+- **Frontend:** http://localhost (port 80)
+- **Backend:** http://localhost:8080
+- **PostgreSQL:** localhost:5432
+
+#### Manual Installation
+
 2. Configure your database connection in `application.properties`:
 ```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/armardur
